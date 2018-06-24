@@ -7,12 +7,8 @@
         mc:Ignorable="d"
         Title="Poland" Height="450" Width="800">
     <Window.Resources>
-        <Style x:Key="Crimson" TargetType="{x:Type Rectangle}">
-            <Setter Property="Fill" Value="#FFD1243D"/>
-        </Style>
-        <Style x:Key="White" TargetType="{x:Type Rectangle}">
-            <Setter Property="Fill" Value="#E9E8E7"/>
-        </Style>
+        <SolidColorBrush x:Key="Crimson" Color="#FFD1243D"/>
+        <SolidColorBrush x:Key="White" Color="#E9E8E7"/>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -21,9 +17,9 @@
         </Grid.RowDefinitions>
         <Rectangle Grid.Column="0"
                 Grid.Row="0"
-                Style="{DynamicResource White}"/>
+                Fill="{DynamicResource White}"/>
         <Rectangle Grid.Column="0"
                 Grid.Row="1"
-                Style="{DynamicResource Crimson}"/>
+                Fill="{DynamicResource Crimson}"/>
     </Grid>
 </Window>
