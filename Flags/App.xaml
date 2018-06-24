@@ -4,7 +4,10 @@
              xmlns:local="clr-namespace:Flags"
              StartupUri="Poland.xaml">
     <Application.Resources>
-        <SolidColorBrush x:Key="Crimson" Color="#FFD1243D"/>
-        <SolidColorBrush x:Key="White" Color="#E9E8E7"/>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Brushes.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
