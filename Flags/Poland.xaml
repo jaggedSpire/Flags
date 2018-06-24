@@ -17,9 +17,9 @@
         </Grid.RowDefinitions>
         <Rectangle Grid.Column="0"
                 Grid.Row="0"
-                Fill="{DynamicResource White}"/>
+                Fill="{StaticResource White}"/>
         <Rectangle Grid.Column="0"
                 Grid.Row="1"
-                Fill="{DynamicResource Crimson}"/>
+                Fill="{StaticResource Crimson}"/>
     </Grid>
 </Window>
