@@ -6,10 +6,6 @@
         xmlns:local="clr-namespace:Flags"
         mc:Ignorable="d"
         Title="Poland" Height="450" Width="800">
-    <Window.Resources>
-        <SolidColorBrush x:Key="Crimson" Color="#FFD1243D"/>
-        <SolidColorBrush x:Key="White" Color="#E9E8E7"/>
-    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
