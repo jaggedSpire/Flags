@@ -60,8 +60,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Poland.xaml.cs">
-      <DependentUpon>Poland.xaml</DependentUpon>
+    <Compile Include="JapaneseFlag.xaml.cs">
+      <DependentUpon>JapaneseFlag.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
     <Compile Include="PolishFlag.xaml.cs">
       <DependentUpon>PolishFlag.xaml</DependentUpon>
@@ -92,7 +95,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="Poland.xaml">
+    <Page Include="JapaneseFlag.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

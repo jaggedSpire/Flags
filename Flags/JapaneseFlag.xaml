@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="Flags.JapaneseFlag"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Flags"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="675">
+    <!--
+    Using some of the specifics listed here https://en.wikipedia.org/wiki/Flag_of_Japan
+    
+        + Sun is centered both horizontally and vertically on flag
+        + Sun is 3/5 the height of the flag
+        + Flag width is 3/2 height (design width, not forced)
+        - colors specified in Munsell, DIC, CMYK, and Pantone color systems. 
+          Hex equivalent taken from wiki page, entry for DSP Z 8704E on Color Chart
+    
+    -->
+    <Grid Margin="0,0,10,-39">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0"
+                   Grid.RowSpan="3"
+                   Fill="{StaticResource JP-White}"/>
+        <Ellipse x:Name="Sun"
+                 Grid.Row="1"
+                 Width="{Binding ActualHeight, ElementName=Sun}"
+                 VerticalAlignment="Stretch"
+                 HorizontalAlignment="Center"
+                 Fill="{StaticResource JP-Vermilion}"/>
+    </Grid>
+</UserControl>
