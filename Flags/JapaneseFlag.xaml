@@ -5,13 +5,13 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:Flags"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="675">
     <!--
     Using some of the specifics listed here https://en.wikipedia.org/wiki/Flag_of_Japan
     
         + Sun is centered both horizontally and vertically on flag
         + Sun is 3/5 the height of the flag
-        - (unused) Flag width is 3/2 height
+        + Flag width is 3/2 height (design width, not forced)
         - colors specified in Munsell, DIC, CMYK, and Pantone color systems. 
           Hex equivalent taken from wiki page, entry for DSP Z 8704E on Color Chart
     
@@ -24,12 +24,12 @@
         </Grid.RowDefinitions>
         <Rectangle Grid.Row="0"
                    Grid.RowSpan="3"
-                   Fill="#e0e0e0"/>
+                   Fill="{StaticResource JP-White}"/>
         <Ellipse x:Name="Sun"
                  Grid.Row="1"
                  Width="{Binding ActualHeight, ElementName=Sun}"
                  VerticalAlignment="Stretch"
                  HorizontalAlignment="Center"
-                 Fill="#c00d0e"/>
+                 Fill="{StaticResource JP-Vermilion}"/>
     </Grid>
 </UserControl>

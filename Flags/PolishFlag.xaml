@@ -13,9 +13,9 @@
         </Grid.RowDefinitions>
         <Rectangle Grid.Column="0"
                 Grid.Row="0"
-                Fill="{StaticResource White}"/>
+                Fill="{StaticResource PL-White}"/>
         <Rectangle Grid.Column="0"
                 Grid.Row="1"
-                Fill="{StaticResource Crimson}"/>
+                Fill="{StaticResource PL-Crimson}"/>
     </Grid>
 </UserControl>
