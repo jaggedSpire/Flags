@@ -5,9 +5,9 @@ namespace Flags
     /// <summary>
     /// Interaction logic for Poland.xaml
     /// </summary>
-    public partial class Poland : Window
+    public partial class MainWindow : Window
     {
-        public Poland()
+        public MainWindow()
         {
             InitializeComponent();
         }
